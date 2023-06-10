@@ -209,7 +209,7 @@ class DDPG(object):
         print("model has been loaded...")
         print("====================================")
 
-@pytest.mark.current
+@pytest.mark.app
 def test_ddpg():
     agent = DDPG(state_dim, action_dim, max_action)
     ep_r = 0

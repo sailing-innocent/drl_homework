@@ -14,12 +14,7 @@ This is a python project mainly depends on
 - anaconda/miniconda python > v3.10
 - (recommend)install `pytest` using `pip install pytest`, otherwise you may not able to run test scripts in `/test` 
 - (recommend)using CUDA to accelerate training 
-
-### Prepare for the Environment
-
-- `conda create -n drl_homework python=310`
-- `conda activate drl_homework`
-- `pip install -r requirement.txt` or you can install the dependent packages manually
+- require: `pytorch`,`numpy`,`matplotlib`,`tensorboard`
 
 ### PYTEST
 

@@ -77,10 +77,10 @@ def test_mujoco_invp_pg_cuda():
 
     assert True 
 
-@pytest.mark.app
+@pytest.mark.current
 def test_mujoco_hc_pg_cuda_train():
     # https://gymnasium.farama.org/environments/mujoco/half_cheetah/
-    env = gym.make("HalfCheetah-v4", render_mode=None)
+    env = gym.make("HalfCheetah-v4", render_mode="human")
     wrapped_env = gym.wrappers.RecordEpisodeStatistics(env, 5)  # Records episode-reward
 
     # total number of episodes to train
@@ -145,7 +145,7 @@ def test_mujoco_hc_pg_cuda_train():
 @pytest.mark.app
 def test_load_mujoco_hc_pg_cuda():
 # https://gymnasium.farama.org/environments/mujoco/half_cheetah/
-    env = gym.make("HalfCheetah-v4", render_mode=None)
+    env = gym.make("HalfCheetah-v4", render_mode="human")
     wrapped_env = gym.wrappers.RecordEpisodeStatistics(env, 5)  # Records episode-reward
 
     # total number of episodes to test
